@@ -28,13 +28,13 @@ int Folder(const char* dirName) {
 
 int main(int argc , char *argv[]) {
        
-    ASSERT(argc <= 3);
-    if (argc <= 3) {
+    ASSERT(argc < 3);
+    if (argc < 3) {
         fprintf(stderr, "Usage: %s <filename> <directory_name>\n", argv[0]);
         exit(EXIT_FAILURE);
     }
     const char *filename = argv[1];
-    const char *namedir    = argv[2];
+    const char *namedir  = argv[2];
      Info_file(filename);
            
      Folder(namedir);

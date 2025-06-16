@@ -1,6 +1,6 @@
 .PHONY: all  clean 
 # name myprogram
-EXE= stat 
+EXE= stat  
 
 # All Objecte File 
 OBJS= main_stat.o
